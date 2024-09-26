@@ -13,18 +13,25 @@
 !/Config/**
 !/Plugins/**
 
+# But ignore binary files and compiled source files of plugins
+Plugins/**/Binaries/*
+Plugins/**/Intermediate/*
+# And developer-specific plugins (RiderLink, etc)
+Plugins/Developer/*
+
 # Only allow .uasset and .umap files from /Content dir.
-# They're tracked by git-lfs, don't forget to track other
-# files if adding them here.
+# They're tracked by git-lfs, don't forget to track other files if adding them here.
 !/Content/**/*.uasset
 !/Content/**/*.umap
+
+# But ignore built data for maps
+*_BuiltData.uasset
 
 # Allow any files from /RawContent dir.
 # Any file in /RawContent dir will be managed by git lfs.
 !/RawContent/**/*
 
 # OS/platform generated files.
-
 # Windows
 ehthumbs.db
 Thumbs.db
@@ -40,12 +47,8 @@ Thumbs.db
 *~
 .directory
 
-# vim
-[._]*.s[a-w][a-z]
-[._]s[a-w][a-z]
-*.un~
-Session.vim
-.netrwhist
-
 # Visual Studio
 .vs
+
+# JetBrains
+.idea
