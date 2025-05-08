@@ -13,10 +13,10 @@
 !/Config/**
 !/Plugins/**
 
-# But ignore binary files and compiled source files of plugins
+# But ignore binary files and compiled source files of plugins.
 Plugins/**/Binaries/*
 Plugins/**/Intermediate/*
-# And developer-specific plugins (RiderLink, etc)
+# And developer-specific plugins (RiderLink, etc).
 Plugins/**/Developer/*
 
 # Only allow .uasset and .umap files from /Content dir.
@@ -24,7 +24,7 @@ Plugins/**/Developer/*
 !/Content/**/*.uasset
 !/Content/**/*.umap
 
-# But ignore built data for maps
+# But ignore built data for maps.
 *_BuiltData.uasset
 
 # Allow any files from /RawContent dir.
@@ -52,3 +52,8 @@ Thumbs.db
 
 # JetBrains
 .idea
+
+# For artists who are not able to compile, you need to comment out the "Plugins/**/Binaries/*" line above, and uncomment lines below.
+# !/Binaries/Win64/*
+# !/Plugins/**/Binaries/Win64/*
+# *.pdb
