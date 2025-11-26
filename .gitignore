@@ -53,7 +53,7 @@ Thumbs.db
 # JetBrains
 .idea
 
-# For artists who are not able to compile, you need to comment out the "Plugins/**/Binaries/*" line above, and uncomment lines below.
+# For artists and designers who are syncing this repository for development, you need to comment out the "Plugins/**/Binaries/*" line above, and uncomment lines below.
 # !/Binaries/Win64/*
 # !/Plugins/**/Binaries/Win64/*
 # *.pdb
